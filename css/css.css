@@ -1,0 +1,13 @@
+body {
+	background-color: #c6c6c6;
+
+}
+#banner {
+	height: 390px;
+	background-image: url("../imgs/cat.jpg");
+	background-size: cover;
+
+}
+#wrapper nav{
+	margin-bottom: 0px;
+}
