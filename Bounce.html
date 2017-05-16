@@ -11,18 +11,19 @@
 <body>
 <!--Menu-->
 	<div class="navbar navbar-fixed-top" role="navigation">
-			<div class="container">
-				<a class="navbar-brand" href="Bounce.html">Bounce</a>
-				<ul class="nav navbar-nav navbar-right">
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span>
-							</a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Default Home</a></li>
-								<li><a href="#">Alternative Home</a></li>
-							</ul>
-						</li>
-					
+		<div class="container">
+			<a class="navbar-brand" href="Bounce.html">Bounce</a>
+				<button class="btn btn-primary hidden-sm hidden-md hidden-lg collapsed" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><span class="glyphicon glyphicon-menu-hamburger"></span>
+				</button>
+				<ul class="nav navbar-nav navbar-right" id="collapseExample">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Default Home</a></li>
+							<li><a href="#">Alternative Home</a></li>
+						</ul>
+					</li>
 						<li><a href="#">About</a></li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <span class="caret"></span></a>
@@ -43,9 +44,10 @@
 						</li>
 				</ul>
 			</div>
+		</div>	
 	</div>
 <!--Header-->
-	<div class="header" id="header">
+	<div class="header">
 		<div class="container">
 			<div class="row">
 			<div class="description col-xs-12 col-sm-5 col-md-5 col-lg-5">
@@ -53,8 +55,8 @@
 	  				<p>Bounce is a modern and minimalistic template perfect for showing off your latest product or service and its features. Bounce comes with many pages and features that make it a wonderful starting point to create something even more unique.</p>
 	 			 		<a class="btn btn-primary btn-lg" href="#" role="button">Get started now</a>
 			</div>
-				<div class=" video col-xs-12 col-sm-7 col-md-7 col-lg-7">
-					<iframe src="http://player.vimeo.com/video/38498748?title=0&amp;byline=0&amp;portrait=0&amp;color=38e8ae" width="670" height="377"></iframe>
+				<div class="video col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<iframe src="http://player.vimeo.com/video/38498748?title=0&amp;byline=0&amp;portrait=0&amp;color=38e8ae"></iframe>
 					</div>
 				</div>
 			</div>
@@ -108,7 +110,7 @@
 		</div>
 	</div>
 <!--footer-->
-	<div class="footer">
+	<div class="footer visible-md visible-lg">
 		<div class="container">	
 			<div class="row">
 				<div class="col-sm-3 col-md-3 col-lg-3">
@@ -149,13 +151,15 @@
  	<div class="container-fluid copyright">
   	<div class="container">
   		<div class="row">
-  			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">© 2013 Bounce Template
+  			<div class="col-xs-7 col-sm-6 col-md-6 col-lg-6">© 2013 Bounce Template
   			</div>
-  			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">Back to Top <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+  			<div class="col-xs-4 col-sm-6 col-md-6 col-lg-6 text-right">Back to Top <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
 	  		</div>
   		</div>
 		</div>
 	</div>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="js/bounce.js"></script>
 </body>
 </html>
