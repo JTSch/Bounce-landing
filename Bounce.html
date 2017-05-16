@@ -2,191 +2,160 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Bounce | Home</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
 	<link rel="stylesheet" href="Bounce_css.css">
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
 </head>
 <body>
 <!--Menu-->
-	<div class="container-fluid">
-	<div class="row">
-		<div class="navbar navbar-fixed-top">
+	<div class="navbar navbar-fixed-top" role="navigation">
 			<div class="container">
-				<div class="navbar-brand">
-					<a class="brand" href="#">Bounce</a>
-				</div>
-				<ul class="navbar-right">
-					<ul class="nav navbar-nav">
+				<a class="navbar-brand" href="Bounce.html">Bounce</a>
+				<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Default Home</a></li>
-							<li><a href="#">Alternative Home</a></li>
-						</ul>
+							<a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Default Home</a></li>
+								<li><a href="#">Alternative Home</a></li>
+							</ul>
 						</li>
 					
 						<li><a href="#">About</a></li>
 						<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <b class="caret"></b> </a>
-							<ul class="dropdown-menu">
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Blog Single</a></li>
-							<li><a href="#">Dividers</a></li>
-						</ul>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Features <span class="caret"></span></a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Blog Single</a></li>
+									<li><a href="#">Dividers</a></li>
+								</ul>
 						</li>
 						<li><a href="#">Pricing</a></li>
 						<li><a href="#">Login</a></li>
 						<li><a href="#">Register</a></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact<b class="caret"></b></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Default contact</a></li>
-						<li><a href="#">Alternative contact</a></li>
-						</ul>
+						<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Contact <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Default contact</a></li>
+								<li><a href="#">Alternative contact</a></li>
+							</ul>
 						</li>
-					</ul>
 				</ul>
 			</div>
-		</div>
-	</div>
 	</div>
 <!--Header-->
-<div id="header">
-	<div class="container" id="jumbo">
-		<div class="row">
-		<div class="col-lg-6">
-			<div class="jumbotron">
-  				<h1>Take your product to new heights.</h1>
-  					<p>Bounce is a modern and minimalistic template perfect for showing off your latest product or service and its features. Bounce comes with many pages and features that make it a wonderful starting point to create something even more unique.</p>
- 			 	<p><a class="btn btn-primary btn-lg active" href="#" role="button">Get started now</a></p>
+	<div class="header" id="header">
+		<div class="container">
+			<div class="row">
+			<div class="description col-xs-12 col-sm-5 col-md-5 col-lg-5">
+	  				<h1>Take your product to new heights.</h1>
+	  				<p>Bounce is a modern and minimalistic template perfect for showing off your latest product or service and its features. Bounce comes with many pages and features that make it a wonderful starting point to create something even more unique.</p>
+	 			 		<a class="btn btn-primary btn-lg" href="#" role="button">Get started now</a>
+			</div>
+				<div class=" video col-xs-12 col-sm-7 col-md-7 col-lg-7">
+					<iframe src="http://player.vimeo.com/video/38498748?title=0&amp;byline=0&amp;portrait=0&amp;color=38e8ae" width="670" height="377"></iframe>
+					</div>
+				</div>
+			</div>
 			</div>
 		</div>
-			<div class="col-lg-6">
-				<iframe src="http://player.vimeo.com/video/38498748?title=0&amp;byline=0&amp;portrait=0&amp;color=38e8ae" width="670" height="377"></iframe>
-				</div>
-				</div>
-		</div>
-		</div>
 	</div>
-</div>
 <!--content-->
-<div class="content">
-<div class="container">
-	<div class="row">
-		<div class="col-lg-12">
-		<h2>Great features of your product or service</h2>
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h2 class="text-center">Great features of your product or service</h2>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+				<div class="feature text-center col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<span class="glyphicon glyphicon-phone"></span>
+					<h2>Modern and Minimalistic</h2>
+					<p>Bounce is built on the awesome frontend framework Bootstrap, giving you easy access to all of its features.</p>
+				</div>
+				<div class="feature text-center col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<span class="glyphicon glyphicon-text-size"></span>
+					<h2>Awesome Typography</h2>
+				<p >Bounce uses the beautiful Open Sans Google Web Font and Glyphicons Pro to deliver highly scalable icons.</p>
+				</div>
+				<div class="feature text-center col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<span class="glyphicon glyphicon-plane"></span>
+					<h2>Launch Ready</h2>
+					<p>Bounce comes with several pages and colors, giving you a head start on creating a unique design.</p>
+				</div>
+			</div>
+			<hr>
+			<div class="row">
+			  <div class="feature text-center col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			    <a class="thumbnail" href="#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97200&w=400&h=200"></a>
+			    <h2>Image 1</h2>
+					<p>Optional subtext to help better explain the image above can go here.</p>
+			  </div>
+			  <div class="feature text-center col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			    <a class="thumbnail" href="#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97200&w=400&h=200"></a>
+			    <h2>Image 2</h2>
+					<p>Optional subtext to help better explain the image above can go here.</p>
+			  </div>
+			  <div class="feature text-center col-xs-12 col-sm-4 col-md-4 col-lg-4">
+			    <a class="thumbnail" href="#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97200&w=400&h=200"></a>
+			    <h2>Image 3</h2>
+					<p>Optional subtext to help better explain the image above can go here.</p>
+			  </div>
+			</div>
 		</div>
 	</div>
-	<hr>
-	<div class="row">
-		<div class="col-lg-4">
-			<div class="glyphicon glyphicon-phone" id="glyphicon"></div>
-		</div>
-		<div class="col-lg-4">
-			<div class="glyphicon glyphicon-font" id="glyphicon"></div>
-		</div>
-<div class="col-lg-4">
-	<div class="glyphicon glyphicon-plane" id="glyphicon"></div>
-</div>
-	</div>
-
-<div class="row">
-	<div class="col-lg-4">
-		<h2>Modern and Minimalistic</h2>
-		<p>Bounce is built on the awesome frontend framework Bootstrap, giving you easy access to all of its features.</p>
-	</div>
-	<div class="col-lg-4" style="padding-left:10px; padding-right:10px;">
-		<h2>Awesome Typography</h2>
-		<p >Bounce uses the beautiful Open Sans Google Web Font and Glyphicons Pro to deliver highly scalable icons.</p>
-	</div>
-	<div class="col-lg-4">
-		<h2>Launch Ready</h2>
-		<p>Bounce comes with several pages and colors, giving you a head start on creating a unique design.</p>
-	</div>
-</div>
-<hr>
-<div class="row">
-  <div class="col-lg-4">
-    <a class="thumbnail" href="#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97200&w=400&h=200"></a>
-  </div>
-  <div class="col-lg-4">
-    <a class="thumbnail" href="#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97200&w=400&h=200"></a>
-  </div>
-  <div class="col-lg-4">
-    <a class="thumbnail" href="#"><img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97200&w=400&h=200"></a>
-  </div>
-</div>
-<div class="row">
-	<div class="col-lg-4" style="margin-top: -25px;">
-		<h2>Image 1</h2>
-		<p>Optional subtext to help better explain the image above can go here.</p>
-	</div>
-	<div class="col-lg-4" style="margin-top: -25px;">
-		<h2>Image 2</h2>
-		<p>Optional subtext to help better explain the image above can go here.</p>
-	</div>
-	<div class="col-lg-4" style="margin-top: -25px;">
-		<h2>Image 3</h2>
-		<p>Optional subtext to help better explain the image above can go here.</p>
-	</div>
-</div>
-</div>
-</div>
-	
 <!--footer-->
-<div id="footer">
-	<div class="container">	
-		<div class="col-lg-3">
-			<h3>QUICK LINKS</h3>
-			<ul type="none">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About us</a></li>
-				<li><a href="#">Features</a></li>
-				<li><a href="#">Pricing</a></li>
-			</ul>
+	<div class="footer">
+		<div class="container">	
+			<div class="row">
+				<div class="col-sm-3 col-md-3 col-lg-3">
+					<h3>QUICK LINKS</h3>
+					<ul type="none">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">Pricing</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3">
+					<h3>COMPANY</h3>
+					<ul type="none">
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use</a></li>
+						<li><a href="#">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3">
+					<h3>WE'RE SOCIAL</h3>
+					<ul type="none">
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">Twitter</a></li>
+						<li><a href="#">Google +</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3 subscribe">
+					<h3>SUBSCRIBE</h3>
+					<p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
+		    	<input type="text" class="form-control" placeholder="Your Email">
+		    	<a class="btn btn-primary btn-sm" href="#" role="button">Subscribe</a>
+		  	</div>
+			</div>
 		</div>
-		<div class="col-lg-3">
-			<h3>COMPANY</h3>
-			<ul type="none">
-				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="#">Terms of Use</a></li>
-				<li><a href="#">FAQ</a></li>
-			</ul>
-		</div>
-		<div class="col-lg-3">
-			<h3>WE'RE SOCIAL</h3>
-			<ul type="none">
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Google +</a></li>
-			</ul>
-		</div>
-		<div class="col-lg-3" id="subscribe">
-			<h3>SUBSCRIBE</h3>
-			<p>Subscribe to our newsletter and stay up to date with the latest news and deals!</p>
-			<div class="form-group">
-    			<input type="text" class="form-control" placeholder="Your Email">
-    		</div>
-    		<p><a class="btn btn-primary btn-sm" href="#" role="button" style="color: white">Subscribe</a></p>
-  		</div>
-
 	</div>
-</div>
-</div>
+<!--Bottom Menu-->
+ 	<div class="container-fluid copyright">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">© 2013 Bounce Template
+  			</div>
+  			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">Back to Top <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+	  		</div>
+  		</div>
+		</div>
+	</div>
 
-  <div class="copyright">
-  <div class="container">
-  <div class="row">
-  <div class="col-lg-6" style="text-align:left;">
-  © 2013 Bounce Template</div>
-  <div class="col-lg-6" style="text-align:right;">
-  <a href="#jumbo">Back to top <span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a></div>
-
-  </div>
-  </div>
-</div>
-
-</div>
-</div>
 </body>
 </html>
