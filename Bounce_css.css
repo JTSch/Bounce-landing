@@ -4,7 +4,6 @@ body {
   color: #394755;
   padding-top: 60px;
   line-height: 20px;
-  position: relative;
 }
 
 h1, h2, h3, button, a {
@@ -29,13 +28,7 @@ h1, h2, h3, button, a {
 .navbar-brand:hover {
 	color: #FFFFFF;
 }
-.navbar button {
-	width: 40px;
-	height: 29px;
-	border: none;
-	background-color: #04c;
-	margin: 10px 30px;
-}
+
 .glyphicon-menu-hamburger {
 	color: #ffffff;
 	top: 0;
@@ -95,8 +88,10 @@ h1, h2, h3, button, a {
 	font-size: 17px;
 	font-weight: 300;
 	width: 190px;
-	background: #08c;
+	background-color: #08c;
 	margin-bottom: 10px;
+}
+.gradient {
 	background: -moz-linear-gradient(to bottom, #08c, #04c);
   background: -webkit-linear-gradient(to bottom, #08c, #04c);
   background: -o-linear-gradient(to bottom, #08c, #04c);
@@ -104,7 +99,7 @@ h1, h2, h3, button, a {
   background: linear-gradient(to bottom, #08c, #04c);
 }
 
-.description .btn:hover {
+.gradient:hover {
 	background: -moz-linear-gradient(to top, #08c, #04c);
   background: -webkit-linear-gradient(to top, #08c, #04c);
   background: -o-linear-gradient(to top, #08c, #04c);
@@ -130,11 +125,7 @@ iframe {
 	background: url("images/noise.png") repeat;
 	padding-top: 22px;
 	padding-bottom: 30px;
-
 }
-.content .container {
-	padding: 0;
-} 
 
 .content h2 {
 	font-size: 32px;
@@ -166,13 +157,14 @@ hr {
 }
 
 .footer {
-	background-color:#eee;
+	background-color: #eee;
 	color: #799FF2;
 	border-top: 1px solid lightgrey;
 	padding: 20px 0;
 }
-.footer .container {
-	padding: 0;
+
+.footer div[class^="col"] {
+	padding: 10px;
 }
 
 .footer h3 {
@@ -215,28 +207,17 @@ hr {
 	margin-bottom: 20px;
 	width: 88px;
 	line-height: inherit;
-	background: #08c;
-	background: -moz-linear-gradient(to bottom, #08c, #04c);
-  background: -webkit-linear-gradient(to bottom, #08c, #04c);
-  background: -o-linear-gradient(to bottom, #08c, #04c);
-  background: -ms-linear-gradient(to bottom, #08c, #04c);
-  background: linear-gradient(to bottom, #08c, #04c);
-}
-
-.subscribe > .btn:hover {
-	background: -moz-linear-gradient(to top, #08c, #04c);
-  background: -webkit-linear-gradient(to top, #08c, #04c);
-  background: -o-linear-gradient(to top, #08c, #04c);
-  background: -ms-linear-gradient(to top, #08c, #04c);
-	background: linear-gradient(to top, #08c, #04c);
+	background-color: #08c;
 }
 
 .copyright {
 	background-color: #394755;
 	color: #d6dfe5;
+	padding: 0;
 }
 .copyright .container {
-	padding: 10px 0;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .glyphicon-arrow-up {
@@ -245,16 +226,44 @@ hr {
 	margin-right: 2px;
 }
 
+[class*="arrow-up"] {
+	cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .navbar-nav {
   	margin-top: 15px;
   }
 
-  .navbar-nav > li > a.active {
+  .navbar-header {
+		padding: 0 15px;
+	}
+
+  .navbar-header button {
+		width: 40px;
+		height: 29px;
+		border: none;
+		background-color: #04c;
+		margin: 10px 0;
+  	display: inline-block;
+  	float: right;
+  }
+  .navbar-header button:focus {
+		outline: none;
+  } 
+
+  .navbar-nav > li > a:hover, 
+  .navbar-nav > li > a.active,
+  .dropdown-menu > li > a:hover {
 	  background-color: transparent;
 	  border: none;
 	  color: #FFFFFF;
+	  font-size: 18px;
 	} 
+
+	.dropdown-menu > li > a {
+		color: #D6DFE5;
+	}
 
   .header,
   .content {
@@ -264,9 +273,10 @@ hr {
   .content {
   	padding: 20px 5px 30px 5px;
   }
+}
 
-  .copyright div[class^="col"]{
-		padding-right: 0;
+@media (max-width: 991px) {
+  .header .description {
+  	padding-left: 15px;
   }
-
-
+}
